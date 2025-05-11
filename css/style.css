@@ -130,10 +130,14 @@ button {
     padding: 8px 10px;
     width: 100%;
     margin-block-end: 10px;
-    
+
     @media (width > 650px) {
-        width: 49%;
+        width: 48%;
     }
+}
+
+.bttns-wrapper {
+    text-align: center;
 }
 
 .send-bttn {
