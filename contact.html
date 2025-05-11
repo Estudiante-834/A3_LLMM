@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="img/antipatron-favicon.svg">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Contacto</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <a href="index.html"><img class="main-logo" src="img/antipatron-logo.svg" alt="Antipatrón Schools S.A."></a>
+
+                <nav class="primary-navigation" aria-label="Primary Navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <h1><span class="crimson-text">Contacto</span></h1>
+
+                <section>
+                    <p>Puedes contactar con nosotros rellenando el siguiente formulario. No dudes en contactarnos si tienes cualquier duda!</p>
+
+                    <div class="contact-form">
+                        <form action="mailto:antipatron@schools.com" method="post" id="form">    
+                            <label for="fnames">Nombres</label>
+                            <input type="text" name="fnames" id="fnames" required>
+                        
+                            <label for="lnames">Apellidos</label>
+                            <input type="text" name="lnames" id="lnames" required>
+                        
+                            <label for="gender">Género</label>
+                            <select name="gender" id="gender">
+                                <option value="M">Masculino</option>
+                                <option value="F">Femenino</option>
+                                <option value="O" selected>Prefiero no decir</option>
+                            </select>
+                        
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" name="email" id="email" required>
+                        
+                            <label for="service">Servicios Interesados</label>
+                            <select name="service" id="service">
+                                <option value="c-individual">Clase Individual</option>
+                                <option value="c-grupal">Clase Grupal</option>
+                                <option value="m-individual">Mentoría Individual</option>
+                                <option value="m-grupal">Mentoría Grupal</option>
+                                <option value="Otros" selected>Otros</option>
+                            </select>
+                        
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" id="message" rows="15" cols="60" required></textarea required>
+
+                            <button type="submit" class="send-bttn">Envíar</button>
+                            <button type="reset" class="reset-bttn">Borrar</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="crimson-bg">
+                <p>©2025 Antipatrón Schools S.A. Todos los Derechos Reservados.</p>
+            </footer>
+        </div>
+    </body>
+</html>
